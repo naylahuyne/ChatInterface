@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20.0" styleClass="v-box" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatinterface.ChatController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="570.0" prefWidth="760.0">
+      <children>
+         <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="360.0" layoutY="40.0" prefHeight="497.0" prefWidth="400.0">
+            <content>
+               <FlowPane prefHeight="200.0" prefWidth="397.0">
+                  <children>
+                     <AnchorPane prefHeight="19.0" prefWidth="375.0" styleClass="message">
+                        <FlowPane.margin>
+                           <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                        </FlowPane.margin>
+                        <children>
+                           <Text layoutX="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello, I'm User." wrappingWidth="350.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <font>
+                                 <Font name="System Bold" size="14.0" />
+                              </font>
+                           </Text>
+                        </children>
+                        <padding>
+                           <Insets left="5.0" right="5.0" />
+                        </padding>
+                        <opaqueInsets>
+                           <Insets />
+                        </opaqueInsets>
+                     </AnchorPane>
+                     <AnchorPane prefHeight="0.0" prefWidth="375.0" styleClass="message">
+                        <FlowPane.margin>
+                           <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                        </FlowPane.margin>
+                        <children>
+                           <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hi." textAlignment="RIGHT" wrappingWidth="350.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                              <font>
+                                 <Font name="System Bold" size="14.0" />
+                              </font>
+                           </Text>
+                        </children>
+                        <padding>
+                           <Insets left="5.0" right="10.0" />
+                        </padding>
+                     </AnchorPane>
+                  </children>
+               </FlowPane>
+            </content></ScrollPane>
+         <MenuButton contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="42.0" prefWidth="50.0" text="MenuButton">
+           <items>
+             <MenuItem mnemonicParsing="false" text="Account">
+                  <graphic>
+                     <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../../icon/ux-user-app-svgrepo-com.png" />
+                        </image></ImageView>
+                  </graphic>
+               </MenuItem>
+               <MenuItem mnemonicParsing="false" text="Setting">
+                  <graphic>
+                     <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../../icon/setting-2-svgrepo-com.png" />
+                        </image></ImageView>
+                  </graphic>
+               </MenuItem>
+             <MenuItem mnemonicParsing="false" text="Help">
+                  <graphic>
+                     <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../../icon/help-circle-svgrepo-com.png" />
+                        </image></ImageView>
+                  </graphic>
+               </MenuItem>
+           </items>
+            <graphic>
+               <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../../icon/menu-navigation-grid-1528-svgrepo-com.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </MenuButton>
+         <Pane layoutX="57.0" prefHeight="575.0" prefWidth="293.0">
+            <children>
+               <Label layoutX="10.0" layoutY="2.0" text="Conversations">
+                  <font>
+                     <Font name="System Bold" size="24.0" />
+                  </font>
+               </Label>
+               <ImageView fitHeight="57.0" fitWidth="70.0" layoutX="36.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true" />
+               <ScrollPane layoutX="-1.0" layoutY="39.0" prefHeight="535.0" prefWidth="300.0">
+                 <content>
+                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="535.0" prefWidth="281.0">
+                        <children>
+                           <AnchorPane layoutX="14.0" layoutY="32.0" styleClass="image-background" />
+                           <ImageView fitHeight="30.0" fitWidth="70.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@../../../icon/ux-user-app-svgrepo-com.png" />
+                              </image>
+                           </ImageView>
+                           <Label layoutX="44.0" layoutY="15.0" text="Anonymous">
+                              <font>
+                                 <Font name="System Bold" size="18.0" />
+                              </font>
+                           </Label>
+                           <ImageView fitHeight="30.0" fitWidth="70.0" layoutX="14.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@../../../icon/ux-user-app-svgrepo-com.png" />
+                              </image>
+                           </ImageView>
+                           <Label layoutX="44.0" layoutY="57.0" text="Abcxyz">
+                              <font>
+                                 <Font name="System Bold" size="18.0" />
+                              </font>
+                           </Label>
+                           <ImageView fitHeight="30.0" fitWidth="70.0" layoutX="14.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@../../../icon/ux-user-app-svgrepo-com.png" />
+                              </image>
+                           </ImageView>
+                           <Label layoutX="44.0" layoutY="99.0" text="User 1">
+                              <font>
+                                 <Font name="System Bold" size="18.0" />
+                              </font>
+                           </Label>
+                           <ImageView fitHeight="30.0" fitWidth="70.0" layoutX="14.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@../../../icon/ux-user-app-svgrepo-com.png" />
+                              </image>
+                           </ImageView>
+                           <Label layoutX="44.0" layoutY="141.0" text="Foo">
+                              <font>
+                                 <Font name="System Bold" size="18.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </AnchorPane>
+                 </content>
+               </ScrollPane>
+            </children>
+         </Pane>
+         <Button contentDisplay="GRAPHIC_ONLY" layoutX="633.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" text="Call">
+            <graphic>
+               <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../../icon/phone-call-svgrepo-com.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button contentDisplay="GRAPHIC_ONLY" layoutX="671.0" layoutY="-4.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="28.0" text="Video Call">
+            <graphic>
+               <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../../icon/video-svgrepo-com.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button contentDisplay="GRAPHIC_ONLY" layoutX="713.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" text="Detail">
+            <graphic>
+               <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../../icon/exclamation-circle-svgrepo-com.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="365.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../icon/ux-user-app-svgrepo-com.png" />
+            </image>
+         </ImageView>
+         <Label layoutX="395.0" layoutY="5.0" text="User 1">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </Label>
+         <TextArea layoutX="416.0" layoutY="542.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="300.0" promptText="Message" wrapText="true">
+            <font>
+               <Font name="System Italic" size="14.0" />
+            </font></TextArea>
+         <Button contentDisplay="GRAPHIC_ONLY" layoutX="350.0" layoutY="540.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" text="Button">
+            <graphic>
+               <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../../icon/attach-svgrepo-com.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button contentDisplay="GRAPHIC_ONLY" layoutX="375.0" layoutY="540.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" text="Button">
+            <graphic>
+               <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../../icon/map-tag-svgrepo-com.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button contentDisplay="GRAPHIC_ONLY" layoutX="720.0" layoutY="540.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" text="Button">
+            <graphic>
+               <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../../icon/like-svgrepo-com.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+      </children>
+   </AnchorPane>
+</VBox>
